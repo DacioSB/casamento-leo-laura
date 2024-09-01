@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, input {
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("./assets/1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    text-align: center;
+    /* Removed the background property */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.question {
+    font-size: 32px; /* Adjust as necessary */
+    color: #6e7e9d; /* Color set to specified value */
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: center; /* Adjust to center the buttons container */
+    margin-top: 20px;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #6e7e9d;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin-right: 20px; /* Fixed space between buttons */
+}
+
+button:hover {
+    background-color: #475165;
+}
+
+button:last-child {
+    margin-right: 0; /* Ensure the last button doesn't have extra space on its right */
+}
+
