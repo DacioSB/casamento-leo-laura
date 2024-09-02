@@ -35,9 +35,11 @@ body, input {
 
 .options {
     display: flex;
-    justify-content: center; /* Adjust to center the buttons container */
+    justify-content: center;
     margin-top: 20px;
     gap: 20px;
+    /* Increase padding if needed to prevent content from being too squeezed */
+    padding: 20px;
 }
 
 button {
@@ -45,14 +47,30 @@ button {
     cursor: pointer;
     border-radius: 5px;
     border: none;
-    background-color: #6e7e9d;
-    color: white;
+    /* color: white; */
     font-family: "Poppins", sans-serif;
-    margin-right: 20px; /* Fixed space between buttons */
+    margin-right: 20px;
+    background-color: transparent; /* Sets default button background to transparent */
 }
 
-button:hover {
-    background-color: #475165;
+/* Button specific styles for background images */
+/* Button specific styles adjusted for a rectangular shape and fitting the background image */
+.mystery-gift, .two-reals {
+    font-size: 0; /* Keeps the text hidden */
+    /* Adjusted dimensions for a rectangular shape */
+    width: 160px; /* Example width, adjust as needed */
+    height: 100px; /* Example height, adjust for proportionality */
+    background-position: center; /* Ensures the image is centered */
+    background-repeat: no-repeat; /* Prevents repeating of the image */
+    background-size: cover; /* Ensures the image covers the button area without distortion */
+}
+
+.mystery-gift {
+    background-image: url('./assets/4.png'); /* Image for the "Presente Misterioso" button */
+}
+
+.two-reals {
+    background-image: url('./assets/5.png'); /* Image for the "2 Reais" button */
 }
 
 button:last-child {
